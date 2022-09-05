@@ -1,7 +1,7 @@
 # Data Structures
 This repository is dedicated to exploring the implementation of various common data structures in Python.
 
-* This repo currently being developed*
+*This repo currently being developed*
 
 Included in this repo **will be** the following data structures with associated file names for convenient folder traversal:
   1. Hash Map → ```hashMap.py```
