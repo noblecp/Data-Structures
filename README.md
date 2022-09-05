@@ -7,6 +7,6 @@ Included in this repo are the following data structures with associated file nam
   3. Stack -> ```stack.py```
   4. Queue -> ```queue.py```
   
-  X. Heap → ```heap.py``` 
-  X. Tree → ```tree.py```
-  X. Graph → ```graph.py```
+  5. Heap → ```heap.py``` 
+  6. Tree → ```tree.py```
+  7. Graph → ```graph.py```
