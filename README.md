@@ -1,5 +1,5 @@
 # Data Structures
-*This repo currently being developed*
+*Currently in development*
 
 This repository is dedicated to exploring the implementation of various common data structures in Python.
 
