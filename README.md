@@ -5,9 +5,11 @@ This repository is dedicated to exploring the implementation of various common d
 
 Included in this repo **will be** the following data structures with associated file names for convenient folder traversal:
   1. Hash Map → ```hashMap.py```
-  2. Linked List → ```linkedList.py```
-  3. Stack -> ```stack.py```
-  4. Queue -> ```queue.py```
-  5. Heap → ```heap.py``` 
-  6. Tree → ```tree.py```
-  7. Graph → ```graph.py```
+  2. Linked List
+      → ```singlylinkedList.py```
+      → ```doublylinkedList.py```
+  4. Stack -> ```stack.py```
+  5. Queue -> ```queue.py```
+  6. Heap → ```heap.py``` 
+  7. Tree → ```tree.py```
+  8. Graph → ```graph.py```
