@@ -1,29 +1,31 @@
 class Node:
+    '''
+    This class represents a node in the Doubly Linked List
+    '''
     def __init__(self, data):
-        self.next = None
-        self.previous = None
-        self.data = data
+        self.next = None        # pointer to next node
+        self.previous = None    # pointer to previous node
+        self.data = data        # the node's data
     
     def __repr__(self):
-        return str(self.data)
-
-'''
-Following are the basic operations supported by a list.
-
-√  | insertAtHead() -> Insertion − Adds an element at the beginning of the list.
-√  | deleteAtHead() -> Deletion − Deletes an element at the beginning of the list.
-√  | insertAtTail() -> Insert Last − Adds an element at the end of the list.
-√  | deleteAtTail() -> Delete Last − Deletes an element from the end of the list.
-√  | insertAfter() -> Insert After − Adds an element after an item of the list.
-_  | delete() -> Delete − Deletes an element from the list using the key.
-√  | display() -> Display forward − Displays the complete list in a forward manner.
-√  | displayReversed() -> Display backward − Displays the complete list in a backward manner.
-'''
-
-class LinkedList:
+        return str(self.data)   # a string representation of the node;s data
+class DoublyLinkedList:
+    '''
+    This class a Doubly Linked List
+    
+    Basic operations include:
+    - insertAtHead() -> Adds a node at the beginning of the list
+    - deleteAtHead() -> Deletes the node at the beginning of the list
+    - insertAtTail() -> Inserts a node at the end of the list
+    - deleteAtTail() -> Deletes the node at end of the list
+    - insertAfter() -> Inserts a node after a given node
+    - delete() -> deletes a particular node
+    - display() -> Displays the list in natural forward order
+    - displayReversed() -> Displays the list in reversed order
+    '''
     def __init__(self):
         '''
-        Constructor -> initialises the linked list with default head and tail pointing to None
+        Constructor -> initialises the linked list with default head and tail both pointing to None
         '''
         self.head = None
         self.tail = None
@@ -191,36 +193,10 @@ class LinkedList:
 ### TESTING ###
 
 # set up Linked List
-ll = LinkedList()
-ll.display()
-
-# insert some nodes at head
+ll = DoublyLinkedList()
+ll.insertAtHead(4)
+ll.insertAtHead(3)
+ll.insertAtHead(2)
 ll.insertAtHead(1)
 ll.insertAtHead(0)
-ll.display()
-
-# delete some nodes at head
-ll.deleteAtHead()
-ll.display()
-
-# insert some nodes at tail
-ll.insertAtTail(4)
-ll.insertAtTail(3)
-ll.display()
-
-# delete some nodes at tail
-ll.deleteAtTail()
-ll.display()
-
-# add a new node after a particular node
-ll.insertAfter(1, 6)
-ll.display()
-
-print("--------------------------------")
-print("Reversed: ", end="")
-ll.displayReversed()
-print("--------------------------------")
-
-# clear entire Linked List and confirm it is empty
-ll.clearAll()
 ll.display()
