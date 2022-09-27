@@ -8,7 +8,7 @@ class Node:
         self.data = data        # the node's data
     
     def __repr__(self):
-        return str(self.data)   # a string representation of the node;s data
+        return str(self.data)   # a string representation of the node's data
 class DoublyLinkedList:
     '''
     This class a Doubly Linked List
@@ -189,14 +189,3 @@ class DoublyLinkedList:
                     break
                 else:
                     runner = runner.next
-
-### TESTING ###
-
-# set up Linked List
-ll = DoublyLinkedList()
-ll.insertAtHead(4)
-ll.insertAtHead(3)
-ll.insertAtHead(2)
-ll.insertAtHead(1)
-ll.insertAtHead(0)
-ll.display()
