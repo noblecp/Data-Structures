@@ -14,14 +14,22 @@ class DoublyLinkedList:
     This class a Doubly Linked List
     
     Basic operations include:
-    - insertAtHead() -> Adds a node at the beginning of the list
-    - deleteAtHead() -> Deletes the node at the beginning of the list
-    - insertAtTail() -> Inserts a node at the end of the list
-    - deleteAtTail() -> Deletes the node at end of the list
-    - insertAfter() -> Inserts a node after a given node
-    - delete() -> deletes a particular node
-    - display() -> Displays the list in natural forward order
-    - displayReversed() -> Displays the list in reversed order
+        - insertAtHead() -> Adds a node at the beginning of the list
+        - deleteAtHead() -> Deletes the node at the beginning of the list
+        - insertAtTail() -> Inserts a node at the end of the list
+        - deleteAtTail() -> Deletes the node at end of the list
+        - insertAfter() -> Inserts a node after a given node
+        - delete(node) -> deletes a particular node
+        - display() -> Displays the list in natural forward order
+        - displayReversed() -> Displays the list in reversed order
+
+    Highlights:
+        - O(1) pop functionality at head and tail
+
+    Use cases:
+        - PriorityQueue -> takes advantage of O(1) pop functionality
+
+
     '''
     def __init__(self):
         '''
@@ -77,7 +85,7 @@ class DoublyLinkedList:
             res.append("None")
             print(" <-> ".join(res))
 
-    def clearAll(self):
+    def clear(self):
         '''
         Function clears entire linked list
         '''
@@ -111,6 +119,7 @@ class DoublyLinkedList:
             self.head.next.previous = self.head.previous
             self.head = self.head.next
             print("Deleted node with key " + str(curHead.data) + " at head")
+            # return curHead
         else:
             self.head = None
             self.tail = None
