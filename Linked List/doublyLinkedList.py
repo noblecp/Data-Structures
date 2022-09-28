@@ -28,8 +28,6 @@ class DoublyLinkedList:
 
     Use cases:
         - PriorityQueue -> takes advantage of O(1) pop functionality
-
-
     '''
     def __init__(self):
         '''

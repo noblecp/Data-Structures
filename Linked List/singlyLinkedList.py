@@ -21,6 +21,9 @@ class SinglyLinkedList:
     - display() -> Displays the list in natural forward order
     '''
     def __init__(self):
+        '''
+        Constructor -> instantiates a the head of the new list to None
+        '''
         self.head = None # pointer to the head node
 
     def clear(self):
@@ -60,6 +63,9 @@ class SinglyLinkedList:
 
 
     def deleteAtHead(self):
+        '''
+        Function deletes the head node of the linked list
+        '''
         curHead = self.head
         if self.head is None:
             print("ERROR: Linked list is already empty")
@@ -90,6 +96,9 @@ class SinglyLinkedList:
                 runner = runner.next
     
     def delete(self, key):
+        '''
+        Function deletes a node from the Linked List by key
+        '''
         runner = self.head
         if runner is None:
             self.head = runner.next
