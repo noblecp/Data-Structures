@@ -1,6 +1,6 @@
 class Stack:
     '''
-    This class a Stack
+    This class implements a Stack
     
     Basic operations include:
         - push() -> Inserts a new element at the top of the stack
